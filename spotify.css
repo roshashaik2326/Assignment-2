@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+}
+
+.main-box {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar .logo {
+  font-size: 2.5rem;
+  color: #1DB954;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  display: block;
+  cursor: pointer;
+}
+
+.sidebar nav a:hover {
+  color: #1DB954;
+}
+
+.content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  overflow-y: auto;
+  gap: 30px;
+  background-color: #181818;
+}
+
+.header {
+  height: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hc1 {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hc2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hc11 {
+  height: 70%;
+  width: 8%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hc12 {
+  height: 70%;
+  width: 8%;
+  background-color: rgb(60, 58, 58);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hc13 {
+  height: 70%;
+  width: 70%;
+  background-color: rgb(60, 58, 58);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hc131, .hc132, .hc133 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hc131 {
+  width: 10%;
+}
+
+.hc132 {
+  width: 70%;
+}
+
+.hc133 {
+  width: 10%;
+}
+
+.ip-ser {
+  width: 100%;
+  height: 90%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.search {
+  font-size: 20px;
+  color: white;
+}
+
+.brand {
+  font-size: 30px;
+  color: white;
+}
+
+.home {
+  font-size: 20px;
+  color: white;
+}
+
+.hc21 {
+  height: 70%;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hc21 a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hc22, .hc23, .hc24 {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hc22 {
+  width: 20%;
+}
+
+.hc23 {
+  width: 15%;
+}
+
+.hc24 {
+  width: 15%;
+}
+
+.hc22 button, .hc23 button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.hc24 button {
+  background-color: white;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bar {
+  height: 50%;
+  border: 1px solid white;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #1DB954;
+  border-radius: 10px;
+}
+
+.card {
+  min-width: 150px;
+  background: #282828;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card .subtitle {
+  font-size: 0.85rem;
+  color: #b3b3b3;
+}
